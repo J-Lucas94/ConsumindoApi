@@ -1,0 +1,36 @@
+<h1>Apontamentos</h1>
+
+<div class="cabecalho">
+<label for="">Requisição</label>
+</div>
+
+<div class="apontamentos">
+    <table>
+        <thead>
+            <th>Requisição</th>
+            <th>Ciclo</th>
+            <th>Data Hora Termino</th>
+            <th>Peso Silo 1</th>
+            <th>Peso Silo 2</th>
+            <th>Peso Silo 3</th>
+            <th>Peso Silo 4</th>
+            <th>Peso Silo 5</th>
+            <th>Peso Silo 6</th>
+        </thead>
+        <tbody>
+            {{#each listagem}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{clico}}</td>
+                <td>{{data_hora_termino}}</td>
+                <td>{{peso_atual_silo1}}</td>
+                <td>{{peso_atual_silo2}}</td>
+                <td>{{peso_atual_silo3}}</td>
+                <td>{{peso_atual_silo4}}</td>
+                <td>{{peso_atual_silo5}}</td>
+                <td>{{peso_atual_silo6}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

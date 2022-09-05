@@ -1,0 +1,27 @@
+<h1>Usuarios</h1>
+
+<div>
+    <table  class="table table-hover">
+        <thead class="table-blue">
+            <th>ID</th>
+            <th>Nome</th>
+            <th>UserName</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+            <th>Website</th>
+        </thead>
+
+        <tbody>
+            {{#each listagem}}
+            <tr>
+                <td> <a href="/apontamentos/{{id}}">{{id}}</a></td>
+                <td>{{name}}</td>
+                <td>{{username}}</td>
+                <td>{{email}}</td>
+                <td>{{phone}}</td>
+                <td>{{website}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
